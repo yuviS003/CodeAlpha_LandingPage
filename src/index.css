@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* For Webkit-based browsers (Chrome) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+  color: #ffedd8; /* Change the icon color */
+}
+
+/* For Firefox */
+input[type="date"]::-calendar-picker-indicator {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+  color: #ffedd8; /* Change the icon color */
+}
