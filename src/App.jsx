@@ -1,15 +1,32 @@
-import About from "./components/About";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import {
+  AboutUs,
+  Chef,
+  FindUs,
+  Footer,
+  Gallery,
+  Header,
+  Intro,
+  Laurels,
+  SpecialMenu,
+} from "./container";
+import { Navbar } from "./components";
+import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 
-const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-    </div>
-  );
-};
+const App = () => (
+  <div>
+    <Navbar />
+    <Header />
+    <AboutUs />
+    <SpecialMenu />
+    <Chef />
+    <Intro />
+    <Laurels />
+    <Gallery />
+    <FindUs />
+    <Footer />
+    <Analytics />
+  </div>
+);
 
 export default App;
